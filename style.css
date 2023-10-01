@@ -5,23 +5,23 @@
 }
 body{
     background-position: center;
-    /*background-size: cover;*/
+    background-size: 100vh;
     
 }
 body.index{
-background-color: rgb(25, 23, 23);
+background-color:black;
 }
 body.contact{
     background-image: url("images/e004eb2c95c437b117bd506af2884839.jpg");
 }
 body.intro{
-    background-image: url("images/784af07f8e13c9f266a276da5460a0a0.jpg");
+    background-color:rgb(21, 1, 28);
 }
 .sidebar{
     display: flex;
     flex-direction: column;
     /*background-color: red*/
-    background-color:rgb(203, 192, 34);
+    background-color:#57b1cf;
     width: 240px;
     height: 200vh;
 }
@@ -56,13 +56,16 @@ nav > ul > li > a:hover{
 
 }
 .main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    margin-bottom: 30rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100vh; /* Use viewport height to fill the entire screen */
    overflow: auto;
    overflow-y: hidden;
+   margin: 0; 
+   border: 1px solid #000; /* You can customize the border style, color, and width */
+   box-sizing: border-box;
 }
 .devinfo{
     display: flex;
@@ -99,7 +102,7 @@ nav > ul > li > a:hover{
     font-size: large;
     padding: 18px;
     text-align: start;
-
+    color: rgb(31, 231, 231);
 }
 .btns a{
     text-decoration: none;
@@ -179,7 +182,7 @@ margin-right: 3.2rem;
 }
 .intro_head{
     text-align: center;
-    color: rgb(47, 239, 29);
+    color: rgb(220, 225, 220);
     margin-top: 2px;
     padding:8px;
     padding-left: 8px;
@@ -239,9 +242,185 @@ margin-right: 3.2rem;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+        transform: translateY(0);
+        opacity:20;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.project:hover {
+    transform: translateY(-10px);
+    opacity: 1;
 }
 .project img{
     height: 100px;
     width: 120px;
     border-radius: 50%;
+}
+/* Add this code to style the Services section */
+.services {
+    background-color: #faf8f8; /* Background color for the services section */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out; /* Add a transition for background-color */
+}
+
+/* Add a hover effect for the services section */
+.services:hover {
+    background-color: #e9f507; /* Change the background color on hover */
+}
+.services h1{
+    color:darkblue;
+    font-family:arial;
+}
+.moving-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  .moving-text {
+    animation: moveText 15s linear infinite; /* Adjust the duration (10s) as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    white-space: nowrap;
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move off-screen to the left */
+    }
+  }
+  
+.category {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color:lightpink;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out; /* Add a transition for background-color */
+}
+
+/* Add a hover effect for each category */
+.category:hover {
+    background-color: #f0f0f0; /* Change the background color of the category on hover */
+}
+
+.category h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.category ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.category li {
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #440de8;
+}
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style article elements */
+article {
+    margin-bottom: 20px;
+    background-color:rgb(102, 214, 54);
+}
+
+/* Style article titles */
+article h1 {
+    color: #333;
+}
+
+/* Style the publication date */
+article p {
+    color: #777;
+}
+
+/* Style section headings */
+section h2 {
+    color: #0f171f;
+}
+
+/* Style paragraphs within sections */
+section p {
+    margin-bottom: 15px;
+}
+
+/* Style images within sections */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius:8px;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Default styles for all screen sizes */
+/* You can keep your existing CSS rules here */
+
+/* Media query for screens smaller than 768px (e.g., phones) */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    body {
+        background-size: cover; /* Adjust background size for smaller screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width for sidebar on smaller screens */
+        height: auto; /* Remove fixed height to allow content to expand */
+    }
+
+    .main {
+        width: 100%; /* Full width for main content on smaller screens */
+        margin-bottom: 0; /* Remove the margin on smaller screens */
+    }
+
+    .profileimage > img {
+        width: 100%; /* Make the profile image full-width on smaller screens */
+        height: auto; /* Allow the image to scale proportionally */
+    }
+
+    /* You can further adjust other styles as needed */
+}
+
+/* Media query for screens smaller than 1024px (e.g., tablets) */
+@media (max-width: 1024px) {
+    /* Adjust styles for tablet screens */
+    /* Add specific styling for tablets here */
+}
+
+/* Media query for screens smaller than 1440px (e.g., laptops) */
+@media (max-width: 1440px) {
+    /* Adjust styles for laptop screens */
+    /* Add specific styling for laptops here */
+}
+
+/* Media query for screens larger than 1440px (e.g., PCs) */
+@media (min-width: 1441px) {
+    /* Adjust styles for PC screens */
+    /* Add specific styling for PCs here */
 }

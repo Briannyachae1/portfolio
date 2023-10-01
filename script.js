@@ -1,15 +1,9 @@
-const slideshow = document.querySelector('.slideshow');
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
+const movingText = document.querySelector('.moving-text');
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateSlide();
-}
+document.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
 
-function updateSlide() {
-    const offset = -currentIndex * 100;
-    slideshow.style.transform = `translateX(${offset}%)`;
-}
-
-setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  movingText.style.left = mouseX + 'px';
+  movingText.style.top = mouseY + 'px';
+});
