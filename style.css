@@ -6,24 +6,28 @@
 body{
     background-position: center;
     background-size: 100vh;
-    
+    background-size: 100vw;
 }
 body.index{
-background-color:black;
+background-color: black;
+opacity: 5;
 }
 body.contact{
-    background-image: url("images/e004eb2c95c437b117bd506af2884839.jpg");
+    background-image: url("images/784af07f8e13c9f266a276da5460a0a0.jpg");
 }
 body.intro{
     background-color:rgb(21, 1, 28);
+}
+body.blog{
+    background-color:rgb(12, 7, 7);
 }
 .sidebar{
     display: flex;
     flex-direction: column;
     /*background-color: red*/
-    background-color:#57b1cf;
+    background-color:rgb(75, 208, 38);
     width: 240px;
-    height: 200vh;
+    height: 276vh;
 }
 .sidebar > nav{
     padding: 25px;
@@ -64,7 +68,7 @@ nav > ul > li > a:hover{
    overflow: auto;
    overflow-y: hidden;
    margin: 0; 
-   border: 1px solid #000; /* You can customize the border style, color, and width */
+   /* You can customize the border style, color, and width */
    box-sizing: border-box;
 }
 .devinfo{
@@ -148,8 +152,8 @@ form{
 background-color: rgb(5, 32, 32);
 color: wheat;
 border-radius: 8px;
-margin-top: 1px;
-margin-bottom: 6rem;
+margin-top: 10px;
+margin-bottom: 3rem;
 margin-right: 3.2rem;
 }
 .btn1{
@@ -191,9 +195,9 @@ margin-right: 3.2rem;
     display: flex;
     align-items: center;
     color: aliceblue;
-    gap: 4px;
+    gap: 7px;
     /*justify-content:center;*/
-    margin-top: 18px;
+    margin-top: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .html{
@@ -249,6 +253,7 @@ margin-right: 3.2rem;
 .project:hover {
     transform: translateY(-10px);
     opacity: 1;
+    background-color: #fff;
 }
 .project img{
     height: 100px;
@@ -259,6 +264,7 @@ margin-right: 3.2rem;
 .services {
     background-color: #faf8f8; /* Background color for the services section */
     padding: 20px;
+    width: 900px;
     border-radius: 8px;
     margin-top: 20px;
     transition: background-color 0.3s ease-in-out; /* Add a transition for background-color */
@@ -266,7 +272,7 @@ margin-right: 3.2rem;
 
 /* Add a hover effect for the services section */
 .services:hover {
-    background-color: #e9f507; /* Change the background color on hover */
+    background-color: rgb(246, 246, 51); /* Change the background color on hover */
 }
 .services h1{
     color:darkblue;
@@ -344,12 +350,8 @@ article {
 
 /* Style article titles */
 article h1 {
-    color: #333;
-}
-
-/* Style the publication date */
-article p {
-    color: #777;
+    color: #0e0d0d;
+    font-size: 30px;
 }
 
 /* Style section headings */
@@ -374,8 +376,8 @@ section img {
 /* Style the footer */
 footer {
     text-align: center;
-    background-color: #333;
-    color: #fff;
+    background-color: #151414;
+    color: #f7f1f1;
     padding: 10px 0;
 }
 
