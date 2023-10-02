@@ -127,6 +127,12 @@ input[type="email"]{
     height: 2rem;
     border-radius: 6px;
 }
+input[type="text"]{
+    width: 80px;
+    width: 30rem;
+    height: 2rem;
+    border-radius: 6px;   
+}
 input[type="number"]{
     width: 80px;
     width: 30rem;
@@ -162,7 +168,6 @@ margin-right: 3.2rem;
     height: 40px;
     margin-bottom: 7px;
     background-color: #e64e4eed;
-    align-self: center;
     border-radius: 10px;
     font-size: medium;
 }
@@ -379,6 +384,18 @@ footer {
     background-color: #151414;
     color: #f7f1f1;
     padding: 10px 0;
+}
+.notification {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 /* Default styles for all screen sizes */
