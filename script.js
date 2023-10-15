@@ -22,3 +22,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       notification.style.display = 'none';
   }, 3000); // 3000 milliseconds (3 seconds) in this example
 });
+
+const texts = [
+  'Welcome to Our Website!',
+  'Explore Our Services!',
+  'Contact Us for More Information!',
+];
+
+let textIndex = 0;
+const changingText = document.getElementById('changing-text');
+
+function changeText() {
+  changingText.textContent = texts[textIndex];
+  textIndex = (textIndex + 1) % texts.length;
+}
+
+setInterval(changeText, 3000); // Change text every 3 seconds

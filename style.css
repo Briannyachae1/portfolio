@@ -4,19 +4,17 @@
     box-sizing: border-box;
 }
 body{
-    background-position: center;
-    background-size: 100vh;
-    background-size: 100vw;
+    background-position: center; 
+    background-size: 100%;
+    background-size: cover;
 }
 body.index{
-background-color: black;
-opacity: 5;
+background-color: rgb(56, 4, 69);
 }
 body.contact{
-    background-image: url("images/784af07f8e13c9f266a276da5460a0a0.jpg");
-}
+background-color: rgb(5,32,32);}
 body.intro{
-    background-color:rgb(21, 1, 28);
+    background-image: url("images/MagazinePic-01-2.3.001-bigpicture_01_8.jpg");
 }
 body.blog{
     background-color:rgb(12, 7, 7);
@@ -25,7 +23,7 @@ body.blog{
     display: flex;
     flex-direction: column;
     /*background-color: red*/
-    background-color:rgb(75, 208, 38);
+    background-color:rgb(45, 143, 176);
     width: 240px;
     height: 276vh;
 }
@@ -82,9 +80,9 @@ nav > ul > li > a:hover{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .profileimage > img{
-    height: 20rem;
+    height: 19rem;
     width:17rem ;
-    border-radius: 10px;
+    border-radius: 50%;
    
     box-shadow: none;
 }
@@ -99,20 +97,21 @@ nav > ul > li > a:hover{
 }
 .buttons{
     display: flex;
-    gap: 16px;
+    gap: 18px;
+    margin-top: 20px;
 }
 .moredetails{
     font-family:Arial, Helvetica, sans-serif;
     font-size: large;
     padding: 18px;
     text-align: start;
-    color: rgb(31, 231, 231);
+    color: rgb(219, 223, 12);
 }
 .btns a{
     text-decoration: none;
 }
 .btns:hover{
-    background-color:rgb(193, 232, 65);
+    background-color:rgb(38, 195, 215);
     color: rgb(24, 17, 3);
 }
 .form{
@@ -191,55 +190,65 @@ margin-right: 3.2rem;
 }
 .intro_head{
     text-align: center;
-    color: rgb(220, 225, 220);
+    color: black;
     margin-top: 2px;
     padding:8px;
     padding-left: 8px;
+    background: white;
+    border-radius: 8px;
 }
 .skillsectionheading{
     display: flex;
     align-items: center;
     color: aliceblue;
+    background: rgb(18, 17, 17);
+    border-radius: 5px;
     gap: 7px;
     /*justify-content:center;*/
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .html{
-    height: 5px;
+    height: 8px;
     background-color: red;
     width: 31rem;
-    margin-left: 34px;
+    margin-left: 42px;
 }
 .css{
-    height: 5px;
+    height: 8px;
     background-color: rgb(20, 240, 101);
     width: 31rem;
    
-    margin-left: 48px;
+    margin-left:60px;
 }
 .javascript{
-    height: 5px;
+    height: 8px;
     background-color: rgb(211, 230, 4);
     width: 28rem;
 }
 .react{
-    height: 5px;
+    height: 8px;
     background-color: rgb(24, 115, 212);
     width: 23rem;
-    margin-left: 34px;
+    margin-left: 39px;
 }
 .PHP{
-    height: 5px;
+    height: 8px;
     background-color: rgb(88, 245, 245);
     width: 26rem;
-    margin-left: 41px;
+    margin-left: 61px;
+}
+.node{
+    height: 8px;
+    background-color: rgb(248, 250, 249);
+    width: 26rem;
+    margin-left: 29px;
 }
 .projectsection{
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    margin-top: 8rem;
+    margin-top: 15rem;
 }
 .project{
     height: 250px;
@@ -250,34 +259,37 @@ margin-right: 3.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-        transform: translateY(0);
+    gap: 35px;
+        transform: translateX(0);
         opacity:20;
         transition: transform 0.5s ease, opacity 0.5s ease;
 }
 .project:hover {
-    transform: translateY(-10px);
+    transform: translateX(-10px);
     opacity: 1;
-    background-color: #fff;
+    background-color: #d568af;
+    color: #f0f0f0;
 }
 .project img{
     height: 100px;
     width: 120px;
     border-radius: 50%;
+    border: #ddd;
 }
 /* Add this code to style the Services section */
 .services {
-    background-color: #faf8f8; /* Background color for the services section */
+    background-color: aliceblue; /* Background color for the services section */
     padding: 20px;
     width: 900px;
     border-radius: 8px;
-    margin-top: 20px;
+    border:#d568af ;
+    margin-top: 25px;
     transition: background-color 0.3s ease-in-out; /* Add a transition for background-color */
 }
 
 /* Add a hover effect for the services section */
 .services:hover {
-    background-color: rgb(246, 246, 51); /* Change the background color on hover */
+    background-color: rgb(222, 229, 27); /* Change the background color on hover */
 }
 .services h1{
     color:darkblue;
@@ -287,6 +299,7 @@ margin-right: 3.2rem;
     overflow: hidden;
     white-space: nowrap;
     width: 100%; /* Adjust the width as needed */
+    color: rgb(30, 30, 204);
   }
   
   .moving-text {
@@ -350,13 +363,15 @@ section {
 /* Style article elements */
 article {
     margin-bottom: 20px;
-    background-color:rgb(102, 214, 54);
+    background-color:rgb(95, 6, 79);
+    border-radius: 8px;
 }
 
 /* Style article titles */
 article h1 {
-    color: #0e0d0d;
+    color: #f2efef;
     font-size: 30px;
+
 }
 
 /* Style section headings */
@@ -397,7 +412,7 @@ footer {
     transform: translateX(-50%);
     z-index: 999;
 }
-
+  
 /* Default styles for all screen sizes */
 /* You can keep your existing CSS rules here */
 
