@@ -57,6 +57,7 @@ nav > ul > li > a:hover{
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+   
 }
 .devinfo{
     display: block;
@@ -68,6 +69,7 @@ nav > ul > li > a:hover{
     font-family:'Courier New', Courier;
     font-size: 34px;
     color: rgb(6, 2, 2);
+    font-weight: bold;
 
 }
 .main{
@@ -76,15 +78,16 @@ nav > ul > li > a:hover{
    justify-content: center;
    width: 100%;
    height: 100vh; /* Use viewport height to fill the entire screen */
-   overflow: auto;
+   overflow:hidden;
    overflow-y: hidden;
-   margin-left: 100px; 
+   
    /* You can customize the border style, color, and width */
    box-sizing: border-box;
 }
 
 .about{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .profileimage > img{
     height: 19rem;
@@ -406,20 +409,27 @@ footer {
     body {
         background-size:auto; /* Adjust background size for smaller screens */
     }
-
+    .container{
+        flex-direction: column;
+    }
     .sidebar {
-       width:auto;
-       height: fit-content;
+       width:100%;
+       max-width: none;
+       margin-right: 0;
+       margin: 0;
+       
         }
 
     .main {
-        width: auto; /* Full width for main content on smaller screens */
-        margin-bottom: 0; /* Remove the margin on smaller screens */
+        width:100%; /* Full width for main content on smaller screens */
+        margin-left: 0; /* Remove the margin on smaller screens */
+        margin: 0;
     }
 
     .profileimage > img {
         width: 100%; /* Make the profile image full-width on smaller screens */
         height: auto; /* Allow the image to scale proportionally */
+        border-radius: 0;
     }
 
     /* You can further adjust other styles as needed */
@@ -433,15 +443,20 @@ footer {
         background-size:cover;
     }
     .sidebar{
-        width:auto ;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 15px;
     }
     .main{
-       width: max-content;
-       margin-bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 15px;
     }
     .profileimage >img{
         width: 100%;
         height: auto;
+        border-radius: 0;
     }
 }
 
@@ -451,14 +466,20 @@ footer {
     /* Add specific styling for laptops here */
    
     .sidebar{
-       width:auto ;
+        width: 200px;
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
     }
     .main{
-      width: fit-content;
+        width: 900px;
+        margin-left: 20px; /* Adjust margin as needed */
+        padding: 15px;
     }
     .profileimage >img{
         width: 100%;
         height:auto;
+        border-radius: 1;
     }
 }
 
