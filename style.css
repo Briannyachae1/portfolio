@@ -409,28 +409,25 @@ footer {
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
     body {
-        background-size:auto; /* Adjust background size for smaller screens */
+        background-size:cover; /* Adjust background size for smaller screens */
     }
 
     .sidebar {
        width:100%;
        max-width: none;
-       margin-right: 0;
        margin: 0;
-       flex-direction: column;
-       height:100%S;
+      
         }
 
     .main {
-        width:90%; /* Full width for main content on smaller screens */
-        margin-left: 0; /* Remove the margin on smaller screens */
+        width:100%; /* Full width for main content on smaller screens */
         margin: 0;
     }
 
     .profileimage > img {
         width: 100%; /* Make the profile image full-width on smaller screens */
         height: auto; /* Allow the image to scale proportionally */
-        border-radius: 1;
+        border-radius: 50%;
     }
 
     /* You can further adjust other styles as needed */
@@ -447,18 +444,15 @@ footer {
         width: 100%;
         max-width: none;
         margin: 0;
-        padding: 15px;
-        flex-direction: column;
     }
     .main{
         width: 100%;
         margin: 0;
-        padding: 15px;
     }
     .profileimage >img{
         width: 100%;
         height: auto;
-        border-radius: 1;
+        border-radius: 50%;
     }
 }
 
