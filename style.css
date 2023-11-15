@@ -378,6 +378,7 @@ footer {
     justify-content: space-between; /* Adjust as needed */
     align-items: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .footer-content {
@@ -385,6 +386,7 @@ footer {
     flex-wrap: wrap;
     gap: 20px; /* Adjust as needed */
     align-items: center;
+    margin-left: 250px;
 }
 
 .notification {
@@ -447,6 +449,7 @@ footer {
         max-width: none;
         margin: 0;
         padding: 15px;
+        flex-direction: column;
     }
     .main{
         width: 100%;
@@ -456,7 +459,7 @@ footer {
     .profileimage >img{
         width: 100%;
         height: auto;
-        border-radius: 0;
+        border-radius: 1;
     }
 }
 
@@ -493,6 +496,10 @@ footer {
     }
     .main{
         width: fit-content;
+    }
+    .buttons{
+        margin-top: 50px;
+        gap:30px;
     }
     .profileimage >img{
       width: 100%;  
