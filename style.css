@@ -411,19 +411,18 @@ footer {
     body {
         background-size:auto; /* Adjust background size for smaller screens */
     }
-    .container{
-        flex-direction: column;
-    }
+
     .sidebar {
        width:100%;
        max-width: none;
        margin-right: 0;
        margin: 0;
-       
+       flex-direction: column;
+       height:100%S;
         }
 
     .main {
-        width:100%; /* Full width for main content on smaller screens */
+        width:90%; /* Full width for main content on smaller screens */
         margin-left: 0; /* Remove the margin on smaller screens */
         margin: 0;
     }
@@ -431,7 +430,7 @@ footer {
     .profileimage > img {
         width: 100%; /* Make the profile image full-width on smaller screens */
         height: auto; /* Allow the image to scale proportionally */
-        border-radius: 0;
+        border-radius: 1;
     }
 
     /* You can further adjust other styles as needed */
