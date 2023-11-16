@@ -67,7 +67,7 @@ nav > ul > li > a:hover{
    display: flex;
     gap: 16px;
     font-family:'Courier New', Courier;
-    font-size: 34px;
+    font-size:28px;
     color: rgb(6, 2, 2);
     font-weight: bold;
 
@@ -140,8 +140,8 @@ nav > ul > li > a:hover{
     align-content: center;
     box-shadow: #555;
     margin: 0 auto; /* Center the contact-info horizontally */
-    width: 450px;
-    height: 245px;
+    width: 470px;
+    height: 300px;
     font-size: larger;
 }
 .contact-info h2 {
@@ -401,6 +401,36 @@ footer {
     transform: translateX(-50%);
     z-index: 999;
 }
+  /*--------youtube------------*/
+.youtube-link{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fb1818; /* WhatsApp green color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .youtube-link:hover {
+    background-color: #8c1251; /* Darker shade on hover */
+  }
+  
+
+/*--------whatsapp------------*/
+.whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25D366; /* WhatsApp green color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #128C7E; /* Darker shade on hover */
+  }
   
 /* Default styles for all screen sizes */
 /* You can keep your existing CSS rules here */
@@ -453,6 +483,7 @@ footer {
         width: 100%;
         height: auto;
         border-radius: 50%;
+        margin-top: 20px;
     }
 }
 
