@@ -263,7 +263,7 @@ nav > ul > li > a:hover{
 
 /* Add a hover effect for the services section */
 .services:hover {
-    background-color: orange; /* Change the background color on hover */
+    background-color: rgb(115, 115, 114); /* Change the background color on hover */
 }
 .services h1{
     color:darkblue;
@@ -448,7 +448,7 @@ footer {
        width: 100%; /* Make the sidebar take up the full width */
        padding: 5px; /* Adjust padding for smaller screens */
        font-size: 14px;
-      flex-direction:row;
+          flex-direction:row;
         }
 
     .main {
