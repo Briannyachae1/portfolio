@@ -9,15 +9,16 @@ body{
     background-size: cover;
 }
 body.index{
-background-color:ghostwhite;
+background-color:rgb(232, 232, 237);
 }
 body.contact{
-background-color: rgb(5,32,32);}
+background-image: url("images/pic2.jpg");
+}
 body.intro{
-    background-color: rgb(234, 234, 249);
+    background-image:url("images/pic2.jpg");
 }
 body.blog{
-    background-color:rgb(151, 136, 136);
+    background-color:ghostwhite;
 }
 .sidebar{
     display: flex;
@@ -26,11 +27,8 @@ body.blog{
     background-color:rgb(17, 82, 104);
     width: 200px;
     max-width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    padding: 15px;
-    border-style:inherit;
+    height:auto;
+   
 }
 .sidebar > nav{
     padding: 15px;
@@ -84,10 +82,15 @@ nav > ul > li > a:hover{
    /* You can customize the border style, color, and width */
    box-sizing: border-box;
 }
-
+.hello{
+    font: bolder;
+}
+.name{
+    font: bolder;
+}
 .about{
-    font-family: 'Roboto', 'Helvetica Neue', sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .profileimage > img{
     height: 19rem;
@@ -99,10 +102,11 @@ nav > ul > li > a:hover{
 .btns{
     height: 45px;
     width: 145px;
-    background-color: rgb(164, 114, 65);
+    background-color: rgb(15, 11, 7);
     border: none;
     border-radius: 8px;
-    color:black;
+    color:rgb(240, 237, 237);
+    font-weight: bolder;
     cursor: pointer;
 }
 .buttons{
@@ -140,9 +144,10 @@ nav > ul > li > a:hover{
     align-content: center;
     box-shadow: #555;
     margin: 0 auto; /* Center the contact-info horizontally */
-    width: 470px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     font-size: larger;
+    align-items: center;
 }
 .contact-info h2 {
     margin-top: 0;
@@ -170,14 +175,14 @@ nav > ul > li > a:hover{
     margin-top: 2px;
     padding:8px;
     padding-left: 8px;
-    background: white;
+    background: rgb(166, 104, 104);
     border-radius: 8px;
 }
 .skillsectionheading{
     display: flex;
     align-items: center;
-    color: rgb(3, 16, 28);
-    background:rgb(250, 252, 250);
+    color: rgb(251, 251, 252);
+    background:rgb(16, 18, 16);
     border-radius: 5px;
     gap: 7px;
     /*justify-content:center;*/
@@ -223,16 +228,16 @@ nav > ul > li > a:hover{
     margin-top: 8rem;
 }
 .project{
-    height: 250px;
+    height: 320px;
     width: 270px;
-    background-color:rgb(42, 38, 38);
+    background-color:rgb(6, 85, 46);
     color: white;
     border-radius: 12px;
     padding: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 35px;
      transform: translateX(0);
      opacity:20;
     transition: transform 0.9s ease, opacity 0.9s ease;
@@ -240,12 +245,12 @@ nav > ul > li > a:hover{
 .project:hover {
     transform: translateX(-10px);
     opacity: 1;
-    background-color: rgb(11, 170, 198);
-    color: darkblue;
+    background-color: rgb(93, 192, 209);
+    color: rgb(3, 3, 23);
 }
 .project img{
-    height: 152px;
-    width: 185px;
+    height: 170px;
+    width: 250px;
     margin-top: 0;
     border-radius :8px;;
     border: #ddd;
@@ -254,16 +259,16 @@ nav > ul > li > a:hover{
 .services {
     background-color: aliceblue; /* Background color for the services section */
     padding: 20px;
-    width: 950px;
+    width: 1000px;
     border-radius: 8px;
-    border:#d568af ;
+    border:none ;
     margin-top: 25px;
     transition: background-color 0.6s ease-in-out; /* Add a transition for background-color */
 }
 
 /* Add a hover effect for the services section */
 .services:hover {
-    background-color: rgb(115, 115, 114); /* Change the background color on hover */
+    background-color:springgreen; /* Change the background color on hover */
 }
 .services h1{
     color:darkblue;
@@ -337,7 +342,7 @@ section {
 /* Style article elements */
 article {
     margin-bottom: 20px;
-    background-color:rgb(141, 96, 132);
+    background-color:rgb(7, 7, 15);
     border-radius: 8px;
 }
 
@@ -374,8 +379,9 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
+
     display: flex;
-    justify-content: space-between; /* Adjust as needed */
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     width: 100%;
@@ -389,18 +395,6 @@ footer {
     margin-left: 250px;
 }
 
-.notification {
-    display: none;
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
-}
   /*--------youtube------------*/
 .youtube-link{
     display: inline-block;
@@ -413,7 +407,7 @@ footer {
   }
   
   .youtube-link:hover {
-    background-color: #8c1251; /* Darker shade on hover */
+    background-color: #e33411; /* Darker shade on hover */
   }
   
 
@@ -427,6 +421,8 @@ footer {
     border-radius: 45px;
     font-weight: bold;
     justify-content:center;
+    margin-left: 70px;
+    gap: 25px;
   }
   
   .whatsapp-link:hover {
@@ -445,17 +441,23 @@ footer {
     }
 
     .sidebar {
-       width: 100%; /* Make the sidebar take up the full width */
+       width: fit-content; /* Make the sidebar take up the full width */
        padding: 5px; /* Adjust padding for smaller screens */
-       font-size: 14px;
+       font-size:smaller;
           flex-direction:row;
+          height: 100%;
         }
 
     .main {
        height:auto;
        padding: 10px; /* Adjust padding for smaller screens */
     font-size: 14px; /* Reduce font size for smaller screens */
+    overflow-x: scroll;
 
+    }
+    .footer{
+        width: 100%;
+        align-content: center;
     }
 
     .profileimage > img {
@@ -475,13 +477,17 @@ footer {
         background-size:cover;
     }
     .sidebar{
-        width: 100%;
+        width:fit-content;
         max-width: none;
         margin: 0;
     }
     .main{
         width: 100%;
         margin: 0;
+    }
+    .footer{
+        width: 100%;
+        align-content: center;
     }
     .profileimage >img{
         width: 100%;
@@ -497,15 +503,19 @@ footer {
     /* Add specific styling for laptops here */
    
     .sidebar{
-        width: 200px;
+        width: fit-content;
         max-width: 100%;
         margin: 0;
-        padding: 15px;
+        padding: 10px;
+        font-size: small;
     }
     .main{
-        width: 900px;
+        width:100%;
         margin-left: 20px; /* Adjust margin as needed */
         padding: 15px;
+    }
+    .projectsection{
+        margin-left: 20px;
     }
     .profileimage >img{
         width: 100%;
