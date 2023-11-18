@@ -429,7 +429,7 @@ footer {
 /* You can keep your existing CSS rules here */
 
 /* Media query for screens smaller than 768px (e.g., phones) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
 
     /* Adjust styles for smaller screens */
     body {
@@ -441,6 +441,10 @@ footer {
        padding: 5px; /* Adjust padding for smaller screens */
        font-size: 8px;
        flex-direction:column;
+       height: 100%;
+        }
+    .container{
+       flex-direction: column;
         }
 
     .main {
@@ -476,7 +480,7 @@ footer {
         margin: 0;
     }
     .main{
-        width: 900px;
+        width: 100%;
         margin: 0;
         width: fit-content;
     }
