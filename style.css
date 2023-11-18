@@ -486,6 +486,9 @@ footer {
         margin: 0;
         width: fit-content;
     }
+    .services{
+        width: 900px;
+    }
     .project{
         gap: 20px;
     }
