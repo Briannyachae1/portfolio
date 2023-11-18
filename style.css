@@ -99,7 +99,6 @@ nav > ul > li > a:hover{
     height: 18rem;
     width:17rem ;
     border-radius: 50%;
-   
     box-shadow: none;
 }
 .btns{
@@ -231,8 +230,8 @@ nav > ul > li > a:hover{
     margin-top: 8rem;
 }
 .project{
-    height: 320px;
-    width: 270px;
+    height: 350px;
+    width: 280px;
     background-color:rgb(6, 85, 46);
     color: white;
     border-radius: 12px;
@@ -465,6 +464,7 @@ footer {
     .footer{
         width: 100%;
         align-content: center;
+        margin-bottom: 0;
     }
 
     .profileimage > img {
@@ -490,10 +490,15 @@ footer {
     .main{
         width: 100%;
         margin: 0;
+        width: fit-content;
+    }
+    .project{
+        gap: 20px;
     }
     .footer{
         width: 100%;
         align-content: center;
+        margin-bottom:0;
     }
     .profileimage >img{
         width: 100%;
