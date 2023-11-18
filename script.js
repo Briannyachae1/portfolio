@@ -38,3 +38,15 @@ function changeText() {
 }
 
 setInterval(changeText, 3000); // Change text every 3 seconds
+
+
+/*------------favicon----------------*/
+document.addEventListener("DOMContentLoaded", function () {
+  // Update the title with a loading icon
+  document.title = "🔄 Loading Your Page...";
+});
+
+// Once the page is fully loaded, remove the loading icon from the title
+window.addEventListener("load", function () {
+  document.title = "Your Page Title";
+});
