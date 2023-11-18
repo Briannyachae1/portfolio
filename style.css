@@ -12,10 +12,10 @@ body.index{
 background-color:rgb(232, 232, 237);
 }
 body.contact{
-background-image: url("images/OldBrickWall3.svg");
+background-image: url("images/1535464430.svg");
 }
 body.intro{
-    background-image:url("images/1675343219wall-in-interior-room.svg");
+    background-image:url("images/citysky.svg");
 }
 body.blog{
     background-color:ghostwhite;
@@ -84,12 +84,6 @@ nav > ul > li > a:hover{
    
    /* You can customize the border style, color, and width */
    box-sizing: border-box;
-}
-.hello{
-    font: bolder;
-}
-.name{
-    font: bolder;
 }
 .about{
     font: bolder;
