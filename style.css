@@ -12,15 +12,16 @@ body.index{
 background-color:rgb(232, 232, 237);
 }
 body.contact{
-background-image: url("images/pic2.jpg");
+background-image: url("images/OldBrickWall3.svg");
 }
 body.intro{
-    background-image:url("images/pic2.jpg");
+    background-image:url("images/1675343219wall-in-interior-room.svg");
 }
 body.blog{
     background-color:ghostwhite;
 }
 .sidebar{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     /*background-color: red*/
@@ -71,6 +72,8 @@ nav > ul > li > a:hover{
 
 }
 .main{
+    box-sizing: border-box;
+    flex: 1;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -175,7 +178,7 @@ nav > ul > li > a:hover{
     margin-top: 2px;
     padding:8px;
     padding-left: 8px;
-    background: rgb(166, 104, 104);
+    background: rgb(245, 240, 240);
     border-radius: 8px;
 }
 .skillsectionheading{
@@ -190,32 +193,32 @@ nav > ul > li > a:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .html{
-    height: 8px;
+    height: 16px;
     background-color: red;
     width: 31rem;
     margin-left: 42px;
 }
 .css{
-    height: 8px;
+    height: 16px;
     background-color: rgb(20, 240, 101);
     width: 31rem;
    
     margin-left:73px;
 }
 .javascript{
-    height: 8px;
+    height: 16px;
     background-color: rgb(211, 230, 4);
     width: 28rem;
     margin-left: 50px;
 }
 .react{
-    height: 8px;
+    height: 16px;
     background-color: rgb(24, 115, 212);
     width: 23rem;
     margin-left: 100px;
 }
 .PHP{
-    height: 8px;
+    height: 16px;
     background-color: rgb(245, 88, 159);
     width: 26rem;
     margin-left: 48px;
@@ -443,16 +446,20 @@ footer {
     .sidebar {
        width: fit-content; /* Make the sidebar take up the full width */
        padding: 5px; /* Adjust padding for smaller screens */
-       font-size:smaller;
-          flex-direction:row;
-          height: 100%;
+       font-size: 8px;
+       flex-direction:column;
+       height: 100%;
+        }
+    .container{
+            flex-direction: column;
         }
 
     .main {
+       margin-top:20px;
        height:auto;
        padding: 10px; /* Adjust padding for smaller screens */
-    font-size: 14px; /* Reduce font size for smaller screens */
-    overflow-x: scroll;
+       font-size: 8px; /* Reduce font size for smaller screens */
+       overflow-x: scroll;
 
     }
     .footer{
@@ -464,9 +471,8 @@ footer {
         width: 100%; /* Make the profile image full-width on smaller screens */
         height: auto; /* Allow the image to scale proportionally */
         border-radius: 50%;
+        flex-direction: column;
     }
-
-    /* You can further adjust other styles as needed */
 }
 
 /* Media query for screens smaller than 1024px (e.g., tablets) */
