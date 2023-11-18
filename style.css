@@ -429,7 +429,7 @@ footer {
 /* You can keep your existing CSS rules here */
 
 /* Media query for screens smaller than 768px (e.g., phones) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     /* Adjust styles for smaller screens */
     body {
@@ -441,10 +441,6 @@ footer {
        padding: 5px; /* Adjust padding for smaller screens */
        font-size: 8px;
        flex-direction:column;
-       height: 100%;
-        }
-    .container{
-            flex-direction: column;
         }
 
     .main {
@@ -452,8 +448,6 @@ footer {
        height:auto;
        padding: 10px; /* Adjust padding for smaller screens */
        font-size: 8px; /* Reduce font size for smaller screens */
-       overflow-x: scroll;
-
     }
     .footer{
         width: 100%;
@@ -465,7 +459,7 @@ footer {
         width: 100%; /* Make the profile image full-width on smaller screens */
         height: auto; /* Allow the image to scale proportionally */
         border-radius: 50%;
-        flex-direction: column;
+       
     }
 }
 
@@ -482,7 +476,7 @@ footer {
         margin: 0;
     }
     .main{
-        width: 100%;
+        width: 900px;
         margin: 0;
         width: fit-content;
     }
